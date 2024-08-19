@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Only Show Failed GitHub CI Checks
 // @namespace    https://github.com/
-// @version      1
+// @version      1.0.1
 // @description  Only show failed GitHub workflow jobs on PR page
 // @author       You
 // @match        https://github.com/*/pull/*
