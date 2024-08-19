@@ -33,7 +33,7 @@
 
     allGithubChecks.forEach(item => {
         const svg = item.querySelector('svg');
-        if (svg.matches('.octicon-check') || svg.matches('.octicon-skip') || svg.matches('.octicon-stop')) {
+        if (svg.matches('.octicon-check') || svg.matches('.octicon-skip') || svg.matches('.octicon-stop') || svg.matches('.octicon-square-fill')) {
             item.hidden = true;
             modified = true;
         }
