@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         Hide Skipped CI Checks
+// @name         Only Show Failed GitHub CI Checks
 // @namespace    https://github.com/
 // @version      1
-// @description  Hide skipped CI check steps on PR page
+// @description  Only show failed GitHub workflow jobs on PR page
 // @author       You
 // @match        https://github.com/*/pull/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=github.com
@@ -43,7 +43,7 @@
         const statusHeader = document.querySelector('.merge-status-list');
 
         const skippedHiddenStatusText = document.createElement('p');
-        skippedHiddenStatusText.textContent = 'Skipped steps are hidden 🥷';
+        skippedHiddenStatusText.textContent = 'Non-failed steps are hidden 🥷';
         skippedHiddenStatusText.style.margin = '1rem';
         skippedHiddenStatusText.style.textAlign = 'center';
 
