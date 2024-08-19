@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         Only Show Failed GitHub CI Checks
 // @namespace    https://github.com/
-// @version      1.0.1
+// @version      1.0.2
 // @description  Only show failed GitHub workflow jobs on PR page
-// @author       You
+// @author       Hao Dong
 // @match        https://github.com/*/pull/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=github.com
 // @grant        none
