@@ -4,7 +4,7 @@
 // @version      1
 // @description  Hide skipped CI check steps on PR page
 // @author       You
-// @match        https://github.com/DigitalInnovation/onyx/pull/*
+// @match        https://github.com/*/pull/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=github.com
 // @grant        none
 // ==/UserScript==
