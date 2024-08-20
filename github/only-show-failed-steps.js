@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Only Show Failed GitHub CI Checks
 // @namespace    https://github.com/
-// @version      1.0.2
+// @version      1.0.3
 // @description  Only show failed GitHub workflow jobs on PR page
 // @author       Hao Dong
 // @match        https://github.com/*/pull/*
@@ -27,12 +27,13 @@
 
     await wait_element(document, '.merge-status-list');
 
-    const allGithubChecks = document.querySelectorAll('.merge-status-item');
+    const allGithubChecks = document.querySelectorAll('.merge-status-list > .merge-status-item');
 
     let modified = false;
 
     allGithubChecks.forEach(item => {
         const svg = item.querySelector('svg');
+
         if (svg.matches('.octicon-check') || svg.matches('.octicon-skip') || svg.matches('.octicon-stop') || svg.matches('.octicon-square-fill')) {
             item.hidden = true;
             modified = true;
